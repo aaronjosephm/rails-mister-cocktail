@@ -1,0 +1,23 @@
+.card {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex: atuo;
+  text-align: center !important;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 15px;
+  margin-bottom: 10vh !important;
+  color: white;
+
+}
+
+.card h2 {
+  text-align: center !important;
+
+}
+
+.card ol {
+  font-family: 'Brush Script MT', cursive;
+  text-align: left !important;
+  padding-bottom: 20vh;
+}

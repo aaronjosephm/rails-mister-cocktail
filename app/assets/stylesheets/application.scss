@@ -13,3 +13,18 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  padding-bottom: 70vh;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-style: normal;
+  font-size: 100px;
+  color: white;
+}

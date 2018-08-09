@@ -14,7 +14,7 @@
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
-
+        <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li>
             <%= link_to "#" do %>
@@ -44,11 +44,23 @@
   </div>
 </div>
 
-<h1> Cocktails </h1>
+<h1> Les Cocktails </h1>
 <% @cocktails.each do |cocktail| %>
+<div class="col-md-6 offset-md-6" style="text-align: center; display: flex;">
+
+<div class="card">
+  <div class="container">
   <h2><%= cocktail.name %></h2>
-  <p><%= link_to cocktail.name, cocktail_path(cocktail), method: :get%></p>
-  <%= link_to cocktail_path(cocktail), method: :delete do %>
+  <ol>
+    <% cocktail.doses.each do |dose| %>
+    <li><%= "#{dose.description} #{dose.ingredient.name}" %></li>
+    <% end %>
+  </ol>
+  <p><%= link_to 'details', cocktail_path(cocktail), method: :get%></p>
+  <p><%= link_to cocktail_path(cocktail), method: :delete do %></p>
     <i class="fas fa-trash-alt"></i>
+  </div>
+</div>
+</div>
     <% end %>
 <% end %>
