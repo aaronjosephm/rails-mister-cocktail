@@ -1,0 +1,8 @@
+<h1>Please add description: </h1>
+<div class="col-md-3 offset-md-3">
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :description, label: 'description' %>
+  <%= f.input :ingredient_id, label: 'ingredient' %>
+  <%= f.submit "submit", class: "btn btn-primary" %>
+<% end %>
+</div>
