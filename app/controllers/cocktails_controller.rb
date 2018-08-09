@@ -8,7 +8,6 @@ class CocktailsController < ApplicationController
   def show
     @cocktail = Cocktail.find(params[:id])
     @doses = Dose.all.select { |dose| dose.cocktail == @cocktail }
-
   end
 
   def new

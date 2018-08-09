@@ -46,6 +46,12 @@
 
 <h1><%= @cocktail.name %></h1>
 <h2>Ingredients:</h2>
+<% @doses.each do |dose| %>
+<p><%= dose.description %></p>
+  <%= link_to cocktail_dose_path(dose), method: :delete do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
+<% end %>
 <p><%= link_to '+ Add ingredients', new_cocktail_dose_path(@cocktail), method: :get%></p>
 
 <p><%= link_to 'Back', :back %></p>
