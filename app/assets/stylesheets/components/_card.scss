@@ -1,7 +1,10 @@
 .card {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
-  flex: atuo;
+  flex: auto;
+  flex-box: center;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center !important;
   width: 50vh;
   height: 50vh;

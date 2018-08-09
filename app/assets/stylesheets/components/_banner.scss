@@ -1,0 +1,17 @@
+.banner {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: auto;
+  margin-bottom: 10vh;
+  height: 70vh;
+}
+
+.banner h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-style: normal;
+  font-size: 100px;
+  color: white;
+}
