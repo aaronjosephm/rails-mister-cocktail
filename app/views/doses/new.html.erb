@@ -1,8 +1,8 @@
-<h1>Please add description: </h1>
-<div class="col-md-3 offset-md-3">
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-  <%= f.input :description, label: 'description' %>
-  <%= f.collection_select(:ingredient_id, Ingredient.all, :id, :name, label: 'ingredient') %>
-  <%= f.submit "submit", class: "btn btn-primary" %>
-<% end %>
+<div class="banner-new-ingredient">
+  <h1>Please add description: </h1>
+  <%= simple_form_for([@cocktail, @dose]) do |f| %>
+    <h2><%= f.input :description, wrapper_html: { class: 'banner-description' } %></h2>
+    <%= f.collection_select(:ingredient_id, Ingredient.all, :id, :name, label: 'ingredient') %>
+    <%= f.submit "submit", class: "btn btn-primary" %>
+  <% end %>
 </div>

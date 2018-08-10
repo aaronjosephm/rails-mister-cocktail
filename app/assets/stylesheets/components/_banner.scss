@@ -38,3 +38,40 @@
   font-size: 100px;
   color: white;
 }
+
+.banner-new {
+  background-image: url("https://res.cloudinary.com/dtepnjwbk/image/upload/v1533920811/cerrnjnedn8sv8kiztfw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: auto;
+  height: 100vh;
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  display: grid;
+}
+
+
+.banner-new-ingredient {
+  background-image: url("https://res.cloudinary.com/dtepnjwbk/image/upload/v1533920811/cerrnjnedn8sv8kiztfw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: auto;
+  height: 100vh;
+  text-align: center;
+  justify-content: space-around;
+  color: black;
+  display: flow-root;
+}
+
+.banner-new-ingredient h1{
+  color: white;
+}
+
+.banner-description {
+  color: white;
+}
+
+.banner-description input {
+  color: black;
+}
