@@ -1,4 +1,10 @@
 <h1><%= @cocktail.name %></h1>
+<img src=<%=@cocktail.photo %>>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :photo %>
+  <%= f.input :photo_change, as: :hidden %>
+  <%= f.submit %>
+<% end %>
 <h2>Ingredients:</h2>
 <% @doses.each do |dose| %>
 <p><%= "#{dose.description} #{dose.ingredient.name}" %></p>
