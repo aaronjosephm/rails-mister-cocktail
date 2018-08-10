@@ -16,16 +16,17 @@
             <% end %>
           </ol>
         </div>
-
-          <p><%= link_to cocktail_path(cocktail), method: :get do %>
+         <ul class="list-inline">
+          <li class="list-inline-item" style="padding-right: 10vw;"><%= link_to cocktail_path(cocktail), method: :get do %>
             <i class="fas fa-edit"></i>
             <% end %>
-          </p>
-          <p>
+          </li>
+          <li class="list-inline-item" style="padding-left: 10vw;">
             <%= link_to cocktail_path(cocktail), method: :delete do %>
               <i class="fas fa-trash-alt"></i>
             <% end %>
-          </p>
+          </li>
+        </ul>
         </div>
       </div>
     <% end %>
