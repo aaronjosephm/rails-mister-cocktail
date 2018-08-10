@@ -21,10 +21,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   flex: auto;
-  margin-bottom: 10vh;
   height: 100vh;
   text-align: center;
+}
 
+.banner-cocktail img {
+  height: 70vh;
+  width: auto;
 }
 
 .banner-cocktail h1 {
