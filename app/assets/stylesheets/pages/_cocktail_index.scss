@@ -4,10 +4,36 @@
 }
 
 .ingredients-list {
-  text-align: center;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  display: inline-table;
+  flex: auto;
+  flex-box: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center !important;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 15px;
+  margin-bottom: 10vh !important;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+
+.ingredients-list i, link {
+  color: black;
+  position: relative;
+}
+
+.ingredients-list i:hover, link:hover {
+  color: white;
+  position: relative;
+}
+
 
 .ingredients-list h2 {
   font-family: 'Brush Script MT', cursive;
   font-size: 100px;
+
 }
