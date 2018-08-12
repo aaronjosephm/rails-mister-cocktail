@@ -3,10 +3,10 @@
     <div class="row">
       <h1><%= @cocktail.name %></h1>
       <div class="col-md-6 offset-md-3" style="text-align: center;">
-        <img src=<%=@cocktail.photo %> style="border-radius: 15px; align-self: center;">
+        <img src=<%= "https://res.cloudinary.com/dtepnjwbk/#{@cocktail.photo.model[:photo]}" %> style="height: 400px; width: auto; border-radius: 15px; align-self: center;">
         <%= simple_form_for(@cocktail) do |f| %>
-          <h2><%= f.input :photo, wrapper_html: { class: 'banner-description' } %></h2>
-          <%= f.input :photo_change, as: :hidden %>
+          <p><%= f.input :photo, wrapper_html: { class: 'banner-description' } %></p>
+          <%= f.input :photo_cache, as: :hidden %>
           <%= f.submit "upload", class: "btn btn-primary" %>
         <% end %>
       </div>
