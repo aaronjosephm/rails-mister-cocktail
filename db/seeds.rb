@@ -17,23 +17,6 @@ json["drinks"].each do |ingredient|
 end
 
 
-margarita = Cocktail.new(
-  name: "margarita"
-)
 
-margarita.save!
-
-sidecar = Cocktail.new(
-  name: "sidecar"
-)
-sidecar.save!
-
-
-dose = Dose.new(
-  description: "6 oz.",
-  ingredient: Ingredient.find(1),
-  cocktail: Cocktail.find(1)
-  )
-dose.save!
 
 

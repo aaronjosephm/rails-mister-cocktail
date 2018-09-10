@@ -10,7 +10,6 @@
         <div class="card">
           <div class="card-body" style="background-image: url(<%= "https://res.cloudinary.com/dtepnjwbk/#{cocktail.photo.model[:photo]}" %>);">
           <h2><%= cocktail.name %></h2>
-
           <ol>
             <% cocktail.doses.each do |dose| %>
               <li><%= "#{dose.description} #{dose.ingredient.name}" %></li>
